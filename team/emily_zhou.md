@@ -15,12 +15,12 @@ Emily is a full-stack developer with experience leading nonprofit tech initiativ
 
 ## Strengths
 
-- Full-Stack Design Integration: She bridges the gap between engineering and aesthetics, enabling the rapid creation of professional-grade, user-centric prototypes.
-- Agile Problem-Solving: She excels at innovating on the fly and proactively identifying vulnerabilities or pain points within the product’s logic.
-- Effective Presentation & Public Speaking: She is a confident communicator who can clearly articulate complex technical concepts and project goals to a wide audience.
+- **Full-Stack Design Integration**: She bridges the gap between engineering and aesthetics, enabling the rapid creation of professional-grade, user-centric prototypes.
+- **Agile Problem-Solving**: She excels at innovating on the fly and proactively identifying vulnerabilities or pain points within the product’s logic.
+- **Effective Presentation & Public Speaking**: She is a confident communicator who can clearly articulate complex technical concepts and project goals to a wide audience.
 
 ## Weaknesses
 
-- Delayed Escalation: She tends to wait until it is too late to ask for assistance, which can create bottlenecks in the development timeline.
-- Technical Gap in AI/LLM: She lacks experience in choosing model architectures and managing implementation trade-offs like cost versus latency.
-- Susceptibility to Tunnel Vision: She can become overly hyper-focused on specific tasks, potentially losing sight of alternative solutions.
+- **Delayed Escalation**: She tends to wait until it is too late to ask for assistance, which can create bottlenecks in the development timeline.
+- **Technical Gap in AI/LLM**: She lacks experience in choosing model architectures and managing implementation trade-offs like cost versus latency.
+- **Susceptibility to Tunnel Vision**: She can become overly hyper-focused on specific tasks, potentially losing sight of alternative solutions.
