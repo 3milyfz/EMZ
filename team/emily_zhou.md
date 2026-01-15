@@ -10,7 +10,7 @@
 - [GitHub](https://github.com/3milyfz)
 - [LinkedIn](https://www.linkedin.com/in/emily-fz/)
 
-## About Jane
+## About Emily
 Emily is a full-stack developer with experience leading nonprofit tech initiatives, automating large-scale warehouse workflows at Chick-fil-A Corporate, and building global payroll products at Rippling. Beyond coding and coursework, she loves traveling and explored Portugal, San Francisco, Los Angeles, Boston, New York, and Japan in 2025. She’s also an avid reader with a soft spot for romantasy, currently deep into the ACOTAR and Empyrean series, which have completely taken over her free time.
 
 ## Strengths
