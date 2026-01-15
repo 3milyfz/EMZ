@@ -1,6 +1,6 @@
 # Emily Zhou
 
-![Jane Doe Profile](./emily_zhou.jpg)
+<img src="./emily_zhou.jpg" alt="Emily Zhou Profile" width="300" />
 
 - Software Engineer
 - emilyfaith.zhou@mail.utoronto.ca
