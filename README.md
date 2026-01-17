@@ -12,7 +12,7 @@
 
 #### Team Slack Channel: #team-emz
 
-COMPANY NAME is a company founded in the THEME industry. COMPANY NAME aims to VISION STATEMENT.
+EMZ is a company founded in the Agriculture & Supply Chain industry. EMZ aims to make sustainable sourcing effortless: a voice-first marketplace that helps small farmers sell reliably and helps businesses hit their quality and sustainability goals.
 
 ## Table of Contents
 
