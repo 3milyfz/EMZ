@@ -33,7 +33,7 @@ Subject matter experts (SMEs) who can help us address our expertise gaps are:
 - **LLM/ML Engineer (deployment-focused):** Helps us choose the right architecture (prompt-only vs RAG vs fine-tuning) under cost/latency constraints, and design monitoring + iteration loops in production.
 - **Privacy / Responsible AI SME:** Advises on data minimization, storage/retention policies, consent + disclosure language, and safe handling of sensitive text.
 - **Accessibility / Inclusive Design SME:** Helps us test for assistive tech compatibility, cognitive load, readability, and “works for real humans” UX.
-- **Domain SMEs (THEME industry):** Helps validate user pain points, workflows, and what “value” means in this domain—so our MVP solves a real problem rather than a technically interesting one.
+- **Domain SMEs (Agriculture & Supply Chain industry):** Helps validate user pain points, workflows, and what “value” means in this domain—so our MVP solves a real problem rather than a technically interesting one.
 
 ---
 
@@ -54,10 +54,10 @@ Our team has a varied background, but we acknowledge that we do not have people 
 A potential impact of this is that we may unintentionally design for “default users” who resemble our own context: high literacy, high device access, and familiarity with product conventions and AI tools. This could show up as:
 - **Accessibility gaps:** UI choices that are visually polished but not navigable via keyboard/screen readers, or that create unnecessary cognitive load.
 - **Trust + privacy missteps:** Over-collection of user data by default, unclear consent flows, or assumptions that users want personalization/memory.
-- **Workflow mismatch:** Features that are technically strong but don’t map to how real users in the THEME industry actually make decisions.
+- **Workflow mismatch:** Features that are technically strong but don’t map to how real users in the Agriculture & Supply Chain industry actually make decisions.
 - **Over-trust risk:** Users may treat LLM outputs as authoritative unless we design clear uncertainty signals, guardrails, and explanations.
 
-People with backgrounds that differ from our own can help us in the THEME industry because they widen our “test surface area.” They help us catch failure modes early—where the product breaks, confuses, excludes, or violates expectations—before those issues become expensive to fix. Concretely, they make our product stronger by:
+People with backgrounds that differ from our own can help us in the Agriculture & Supply Chain industry because they widen our “test surface area.” They help us catch failure modes early—where the product breaks, confuses, excludes, or violates expectations—before those issues become expensive to fix. Concretely, they make our product stronger by:
 - Challenging our assumptions about what users *want* vs what we *think they should want*
 - Improving accessibility and usability across different contexts
 - Stress-testing our privacy and trust design choices

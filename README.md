@@ -10,7 +10,7 @@ This Repository includes a template for your Team's Repository. https://github.c
 
 #### Team Slack Channel: #team\-\<your\-company\-name\-here\>
 
-COMPANY NAME is a company founded in the THEME industry. COMPANY NAME aims to VISION STATEMENT.
+EMZ is a company founded in the Agriculture & Supply Chain industry. EMZ aims to VISION STATEMENT.
 
 Table of Contents
 ---
