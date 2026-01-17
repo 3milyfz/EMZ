@@ -1,6 +1,6 @@
-[COMPANY NAME Principles](./principles.md)
+[EMZ Principles](./principles.md)
 
-People at COMPANY NAME
+People at EMZ
 ---
 
 - [Zoey Zhang, Tech Lead](./zoey_zhang.md)
