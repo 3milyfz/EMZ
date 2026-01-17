@@ -1,22 +1,23 @@
-# Team Repo Template
+# EMZ
 
-This Repository includes a template for your Team's Repository. https://github.com/dcsil/klutch is a good example of an implementation of this!
+<p align="center">
+  <img
+    width="492"
+    height="504"
+    alt="EMZlogo"
+    src="https://github.com/user-attachments/assets/6ed368cf-512a-4a88-b235-6bc91dec3450"
+  />
+</p>
 
-**README template starts below this line 👇👇👇 Delete above this line :)**
 
-# COMPANY NAME
-
-![Team Logo](./logo.png)
-
-#### Team Slack Channel: #team\-\<your\-company\-name\-here\>
+#### Team Slack Channel: #team-emz
 
 EMZ is a company founded in the Agriculture & Supply Chain industry. EMZ aims to VISION STATEMENT.
 
-Table of Contents
----
+## Table of Contents
 
 - [People](./team/)
 - [Diversity](./team/diversity.md)
 - [Product & Research](./product_research/)
-    - [Market](./product_research/market.md)
-    - [Roadmap](./product_research/roadmap.md)
+  - [Market](./product_research/market.md)
+  - [Roadmap](./product_research/roadmap.md)
