@@ -39,3 +39,16 @@ Instructor launches the tool, enters all teams, notices a team name is wrong, tr
 5) Dark theme reduces accessibility/legibility in bright classrooms.
 
 ---
+
+## Journey audit table
+**Total Time to Task Completion (Unhappy Path): ~5–7 minutes before the first team fully completes presentation + Q&A**  
+(Setup dominates time; selection itself is fast.)
+
+| Step | User action | Context switch (Y/N + description) | Time | Evidence |
+|---:|---|---|---:|---|
+| 1 | Open the app and locate the control panel for setup | N | 5–10s | `[UI landing](/rapid-mvp/cuj/assets/step-01-landing.png)` |
+| 2 | Enter **12 team names** (members/topic optional) | **Y — sustained focus shift into data entry** (high cognitive load) | 3–4m | `[Team entry panel](/rapid-mvp/cuj/assets/step-02-team-entry.png)` |
+| 3 | Notice one team name is incorrect after entry | N | 5–10s | `[Incorrect team visible](/rapid-mvp/cuj/assets/step-03-wrong-team.png)` |
+| 4 | Remove the incorrect team and **manually re-add** it with corrected name | **Y — rework loop** (must reconstruct team info; no “edit in place”) | 20–30s | `[Delete + re-add flow](/rapid-mvp/cuj/assets/step-04-delete-readd.png)` |
+| 5 | Set presentation time to **3 min** and Q&A to **2 min** | N | ~5s | `[Timer inputs](/rapid-mvp/cuj/assets/step-05-timer-input.png)` |
+| 6 | Try to edit timer fields via keyboard; pressing delete yields **undeletable 0** and formatting like `01`, `010` | N | 15–30s | `[Timer input formatting](/rapid-mvp/cuj/assets/step-06-timer-formatting.png)` |
