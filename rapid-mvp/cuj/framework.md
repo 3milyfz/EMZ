@@ -44,20 +44,20 @@ Instructor launches the tool, enters all teams, notices a team name is wrong, tr
 **Total Time to Task Completion (Unhappy Path): ~5–7 minutes before the first team fully completes presentation + Q&A**  
 (Setup dominates time; selection itself is fast.)
 
-| Step | User action | Context switch (Y/N + description) | Time | Evidence |
+| Step | User action | Context switch (Y/N + description) | Time | Evidence (Screenshots) |
 |---:|---|---|---:|---|
-| 1 | Open the app and locate the control panel for setup | N | 5–10s | `[UI landing](/rapid-mvp/cuj/assets/step-01-landing.png)` |
-| 2 | Enter **12 team names** (members/topic optional) | **Y — sustained focus shift into data entry** (high cognitive load) | 3–4m | `[Team entry panel](/rapid-mvp/cuj/assets/step-02-team-entry.png)` |
-| 3 | Notice one team name is incorrect after entry | N | 5–10s | `[Incorrect team visible](/rapid-mvp/cuj/assets/step-03-wrong-team.png)` |
-| 4 | Remove the incorrect team and **manually re-add** it with corrected name | **Y — rework loop** (must reconstruct team info; no “edit in place”) | 20–30s | `[Delete + re-add flow](/rapid-mvp/cuj/assets/step-04-delete-readd.png)` |
-| 5 | Set presentation time to **3 min** and Q&A to **2 min** | N | ~5s | `[Timer inputs](/rapid-mvp/cuj/assets/step-05-timer-input.png)` |
-| 6 | Try to edit timer fields via keyboard; pressing delete yields **undeletable 0** and formatting like `01`, `010` | N | 15–30s | `[Timer input formatting](/rapid-mvp/cuj/assets/step-06-timer-formatting.png)` |
-| 7 | Click “Select next team” | N | ~1s | `[Selected team display](/rapid-mvp/cuj/assets/step-07-selected-team.png)` |
-| 8 | Confirm remaining teams count decreases, dashboard list shows which team is live but doesn't show teams that have presented | N | 1s | `[Team selection changes](/rapid-mvp/cuj/assets/step-08-dashboard-changes.png)` |
-| 9 | Start presentation timer; rely on auto 2-min warning | N | 2–3s | `[Timer running](/rapid-mvp/cuj/assets/step-09-timer-running.png)` |
-| 10 | 2-minute warning appears during presentation (automatic) | N | 0s | `[2-min warning](/rapid-mvp/cuj/assets/step-10-warning.png)` |
-| 11 | Instructor comments between presentation and Q&A; forgets to pause; timer **auto-transitions to Q&A** and students lose seconds | N | 5-10s lost | `[Phase transition](/rapid-mvp/cuj/assets/step-11-auto-transition.png)` |
-| 12 | End of Q&A; round continues selecting next team | N | 1–3s | `[Round continues](/rapid-mvp/cuj/assets/step-12-next-round.png)` |
+| 1 | Open the app and locate the control panel for setup | N | 5–10s | [UI landing](assets/step-01-landing.png) |
+| 2 | Enter **12 team names** (members/topic optional) | **Y — sustained focus shift into data entry** (high cognitive load) | 3–4m | [Team entry panel](assets/step-02-team-entry.png) |
+| 3 | Notice one team name is incorrect after entry | N | 5–10s | [Incorrect team visible](assets/step-03-wrong-team.png) |
+| 4 | Remove the incorrect team and **manually re-add** it with corrected name | **Y — rework loop** (must reconstruct team info; no “edit in place”) | 20–30s | [Delete + re-add flow](assets/step-04-delete-readd.png) |
+| 5 | Set presentation time to **3 min** and Q&A to **2 min** | N | ~5s | [Timer inputs](assets/step-05-timer-input.png) |
+| 6 | Try to edit timer fields via keyboard; pressing delete yields **undeletable 0** and formatting like `01`, `010` | N | 15–30s | [Timer input formatting](assets/step-06-timer-formatting.png) |
+| 7 | Click “Select next team” | N | ~1s | [Selected team display](assets/step-07-selected-team.png) |
+| 8 | Confirm remaining teams count decreases, dashboard list shows which team is live but doesn't show teams that have presented | N | 1s | [Team selection changes](assets/step-08-dashboard-changes.png) |
+| 9 | Start presentation timer; rely on auto 2-min warning | N | 2–3s | [Timer running](assets/step-09-timer-running.png) |
+| 10 | 2-minute warning appears during presentation (automatic) | N | 0s | [2-min warning](assets/step-10-warning.png) |
+| 11 | Instructor comments between presentation and Q&A; forgets to pause; timer **auto-transitions to Q&A** and students lose seconds | N | 5–10s lost | [Phase transition](assets/step-11-auto-transition.png) |
+| 12 | End of Q&A; round continues selecting next team | N | 1–3s | [Round continues](assets/step-12-next-round.png) |
 
 ---
 
