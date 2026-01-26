@@ -52,3 +52,11 @@ Instructor launches the tool, enters all teams, notices a team name is wrong, tr
 | 4 | Remove the incorrect team and **manually re-add** it with corrected name | **Y — rework loop** (must reconstruct team info; no “edit in place”) | 20–30s | `[Delete + re-add flow](/rapid-mvp/cuj/assets/step-04-delete-readd.png)` |
 | 5 | Set presentation time to **3 min** and Q&A to **2 min** | N | ~5s | `[Timer inputs](/rapid-mvp/cuj/assets/step-05-timer-input.png)` |
 | 6 | Try to edit timer fields via keyboard; pressing delete yields **undeletable 0** and formatting like `01`, `010` | N | 15–30s | `[Timer input formatting](/rapid-mvp/cuj/assets/step-06-timer-formatting.png)` |
+| 7 | Click “Select next team” | N | ~1s | `[Selected team display](/rapid-mvp/cuj/assets/step-07-selected-team.png)` |
+| 8 | Confirm remaining teams count decreases, dashboard list shows which team is live but doesn't show teams that have presented | N | 1s | `[Team selection changes](/rapid-mvp/cuj/assets/step-08-dashboard-changes.png)` |
+| 9 | Start presentation timer; rely on auto 2-min warning | N | 2–3s | `[Timer running](/rapid-mvp/cuj/assets/step-09-timer-running.png)` |
+| 10 | 2-minute warning appears during presentation (automatic) | N | 0s | `[2-min warning](/rapid-mvp/cuj/assets/step-10-warning.png)` |
+| 11 | Instructor comments between presentation and Q&A; forgets to pause; timer **auto-transitions to Q&A** and students lose seconds | N | 5-10s lost | `[Phase transition](/rapid-mvp/cuj/assets/step-11-auto-transition.png)` |
+| 12 | End of Q&A; round continues selecting next team | N | 1–3s | `[Round continues](/rapid-mvp/cuj/assets/step-12-next-round.png)` |
+
+---
