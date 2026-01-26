@@ -60,3 +60,16 @@ Instructor launches the tool, enters all teams, notices a team name is wrong, tr
 | 12 | End of Q&A; round continues selecting next team | N | 1–3s | `[Round continues](/rapid-mvp/cuj/assets/step-12-next-round.png)` |
 
 ---
+
+## Highlights & lowlights (by severity)
+
+| Severity | Finding | Why it matters |
+|---|---|---|
+| **Great** | Randomizer selection is instant and enforces **no repeats** | Reduces instructor mental bookkeeping; avoids double-calling teams |
+| **Great** | 2-minute warning is automatic | Eliminates a common manual timing failure |
+| **Moderate** | Manual entry for 12 teams is slow and cognitively taxing | Setup time eats into class time; easy to make typos |
+| **Moderate** | Dark theme reduces readability in bright rooms | Instructors will squint/lean in; increases error likelihood |
+| **Moderate** | Auto-switch to Q&A can silently steal time if instructor speaks between phases | Small time losses matter when Q&A is 1–2 minutes; feels unfair to students |
+| **Severe** | No “presented” visual state on dashboard (list unchanged) | Instructor can’t audit progress at a glance; increases confusion + mistrust |
+| **Severe** | Timer input UX: undeletable `0`, formatting like `01`/`010` | Causes hesitation and user confusion despite not a functional issue |
+| **Severe** | No undo after selecting a team | Accidental click or mis-selection forces full reset, disrupting flow |
