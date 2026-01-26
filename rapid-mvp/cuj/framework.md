@@ -26,3 +26,16 @@
 - Pause: by clicking the pause button
 - Reset timer: stops timer, set timer phase to ready with displaying of 0
 
+---
+
+## Critical User Journey Audit (Unhappy Path)
+
+### Unhappy path definition
+Instructor launches the tool, enters all teams, notices a team name is wrong, tries to correct it, then runs selection + timers. Friction occurs because:
+1) Correcting a team name requires **delete + re-add** (no direct edit flow / no undo).  
+2) The **dashboard list doesn’t visually reflect** which teams have already been selected (only the remaining count changes).  
+3) Timer duration input is functional but has **confusing keyboard behavior** (undeletable `0`, odd formatting like `01`, `010`).  
+4) Timer can be forgotten during transitions; the tool **auto-switches to Q&A**, which can unintentionally reduce Q&A time if the instructor speaks between phases.  
+5) Dark theme reduces accessibility/legibility in bright classrooms.
+
+---
