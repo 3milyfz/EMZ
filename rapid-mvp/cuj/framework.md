@@ -73,3 +73,28 @@ Instructor launches the tool, enters all teams, notices a team name is wrong, tr
 | **Severe** | No “presented” visual state on dashboard (list unchanged) | Instructor can’t audit progress at a glance; increases confusion + mistrust |
 | **Severe** | Timer input UX: undeletable `0`, formatting like `01`/`010` | Causes hesitation and user confusion despite not a functional issue |
 | **Severe** | No undo after selecting a team | Accidental click or mis-selection forces full reset, disrupting flow |
+
+---
+
+## Recommendations (2 high-impact changes)
+1) **Add “Presented” visual state**
+   - On selection, mark the chosen team as **Presented** (e.g., strikethrough, badge).
+   - Result: reduces uncertainty and repeated checking; improves trust.
+
+2) **Fix timer input UX + add a “Transition Buffer”**
+   - Timer fields:
+     - Support clearing to empty string, then validating on blur
+     - Normalize display (no `01`/`010`), clamp to sensible ranges
+     - Consider a dedicated mm:ss input or dropdown presets
+   - Transition buffer:
+     - When presentation hits 0, show modal: “Start Q&A?” with one-click start Or a configurable **+10s buffer** before auto Q&A
+   - Result: avoids accidental time loss and reduces timing mistakes.
+
+---
+
+## Pro-tips for using the current MVP
+- Enter team names once, then **double-check** before starting selection (since edits are delete + re-add).
+- After selecting a team, rely on the **remaining counter** as the source of truth (dashboard list won’t show “presented”).
+- For timer edits, if the keyboard delete leaves a 0 you can’t remove, just type the new value over it—the timer will still run correctly.
+- If the instructor tends to comment between phases, **pause immediately** before presentation ends to prevent accidental Q&A countdown loss.
+- For bright classrooms, increase screen brightness or zoom (dark theme may be harder to read).
