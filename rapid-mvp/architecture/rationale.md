@@ -76,4 +76,43 @@ These choices meet sprint constraints and classroom-scale usage while remaining 
 - **Why now:** Avoids cookie/session infrastructure; easy to deploy and scale horizontally later.
 - **Constraint fit:** Enables multi-user separation (queries scoped by `userId`) with minimal moving parts.
 
+---
 
+## 4. Future Scalability Vectors (Planned Evolution Path)
+
+We intentionally designed the topology so scaling does not require redesigning the whole system.
+
+### Backend scaling: Single instance → Horizontal scaling
+- **Trigger:** >100 concurrent active users or sustained CPU/memory pressure
+- **Vector:** Add load-balanced replicas (Railway scaling or migration to Kubernetes)
+- **Design readiness:** Stateless JWT auth means we don’t need sticky sessions or shared session stores.
+
+### Database migration: SQLite → Managed PostgreSQL
+- **Trigger:** Higher availability needs (replication/backups), larger datasets, or write contention
+- **Vector:** Managed Postgres (Railway Postgres / Supabase / AWS RDS)
+- **Why it’s feasible:** Prisma abstracts dialect differences; migration primarily involves:
+  - Updating `schema.prisma` provider to `postgresql`
+  - Switching `DATABASE_URL`
+  - Running migrations against Postgres
+
+### Resilience & operations: From MVP to production-grade
+- Add automated backups / PITR via managed database
+- Add observability: structured logs, metrics, alerting
+- Rate limiting / WAF policies for public endpoints
+- Formalized roles/permissions if instructors and TAs differ
+
+---
+
+## 5. Security & Risk Posture
+
+We implemented lightweight, high-leverage controls aligned with MVP constraints:
+- **Secrets isolation:** No credentials in source; use platform-managed environment variables.
+- **SQL injection mitigation:** Prisma parameterizes queries by default.
+- **Credential safety:** Password hashing via bcrypt (never plaintext).
+- **Token safety:** JWT signing secret stored in Railway variables; HTTPS-only transport.
+- **Tenant isolation:** Data scoped by `userId` to avoid cross-user leakage.
+
+---
+
+## Summary
+Our architecture is intentionally **minimal yet structurally correct**: decoupled tiers, automated delivery, cloud-hosted persistence, and secret isolation. It meets A3’s core requirements (cloud deployment + deployment pipeline + secure runtime config) while preserving a clear path for scaling (horizontal compute, managed database, stronger ops) if the tool evolves beyond classroom-scale usage.
