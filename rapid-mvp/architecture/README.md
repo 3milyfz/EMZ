@@ -27,7 +27,7 @@ High-level index of architectural artifacts for the Classroom Presentation Rando
 
 ### Backend (Railway)
 - [ ] Check Railway dashboard: service is running and healthy
-- [ ] Test API endpoint: `https://backend-production-4a2e.up.railway.app`
+- [ ] Test API endpoint: [`https://backend-production-4a2e.up.railway.app`](https://backend-production-4a2e.up.railway.app)
 - [ ] Verify database connection: register/login endpoints work without errors
 
 ### CI/CD Pipeline
