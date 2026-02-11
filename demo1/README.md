@@ -52,7 +52,7 @@ This README is the high-level manifest for the **Release Demo 1** of the Cultiva
 
 - **`demo1/baseline-cuj.md` – Journey audit**  
   Structured Customer Journey table capturing actions, context switches, elapsed time, and friction severity, including the target persona and the value-driven goal for this release.  
-  **Link placeholder**: _add link or path here_
+  **Link placeholder**: https://github.com/3milyfz/EMZ/blob/2b29b63b3f5a5bfc140c18673d2bf09f24a01497/demo1/baseline-cuj.md
 
 - **`demo1/system-topology.jpg` – System topology diagram**  
   Visual diagram of foundational system boundaries and logical separation between **UI**, **Logic**, and **Data** tiers.  
