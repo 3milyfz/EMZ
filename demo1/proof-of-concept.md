@@ -36,13 +36,16 @@ The POC is considered working only if all of the following happen in the deploye
 
 ## Architectural clarity (decoupling we enforce now)
 
-We enforce a three-tier boundary that supports future decomposition:
+We enforce a three-tier boundary that supports future decomposition while keeping contracts stable:
 
-- **Presentation tier (UI):** React pages for Home, Register, Listings, New Listing, Listing Detail. UI handles navigation, form UX, and rendering states.
-- **Application tier (API contracts):** All reads/writes go through stable API calls. The UI depends on typed shapes for Listing/Response/User and does not reach into storage directly.
-- **Data tier (persistence):** Listings/responses/users are stored with durable IDs. The system relies on persisted state for routing, ownership checks, and status transitions.
+- **Presentation tier (UI):** A React SPA (`pkgs/app`) deployed on Vercel. Pages such as Home, Register, Listings, New Listing, and Listing Detail handle navigation, form UX, and state rendering. The UI never talks to the database directly.
 
-**Why this matters:** Later features (supplier profiles, reliability scoring, search/ranking, notifications) can be added as separate services or endpoints without rewriting the UI, as long as contracts remain stable.
+- **Application tier (API + contracts):** A Hono/Node API (`pkgs/server`) that exposes REST endpoints described via **OpenAPI** and protected by **Auth0 JWT**. All reads/writes flow through this tier, and the UI depends on typed contract shapes (Listing / Response / User) returned by the API. Business rules such as ownership checks and state transitions (open → matched → fulfilled) are enforced server-side.
+
+- **Data tier (persistence):** MongoDB stores Users, Listings, and Responses with durable IDs. The system relies on persisted state for routing, authorization decisions (owner vs non-owner), and status transitions that survive refresh/deploys.
+
+**Why this matters:** This boundary makes evolution low-risk. We can add supplier profiles, reliability scoring fields, matching/allocation logic, search/ranking, and notifications by extending API schemas/endpoints (or splitting services later) without rewriting the UI—so long as the OpenAPI contracts remain stable.
+
 
 ## Known technical constraints / accepted limitations (technical honesty)
 
