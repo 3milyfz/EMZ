@@ -34,7 +34,7 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
 
 ---
 
-## Journey Audit (baseline)
+## Journey Audit
 
 | Step # | Action (what the user does) | Context Switches | Time (seconds) | Friction Severity | Evidence |
 |---:|---|---|---:|---|---|
@@ -52,7 +52,7 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
 
 ---
 
-## Highlights & Lowlights (friction synthesis)
+## Highlights & Lowlights
 
 ### None / Great
 | Area | Why it’s good | Keep / extend |
