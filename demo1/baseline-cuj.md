@@ -99,3 +99,28 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
    - Change: Make `/listings` and `/listings/:id` publicly viewable (no login required). Require authentication only for **Create Listing**, **Respond**, **Match/Fulfill**, and **Edit/Delete**.  
    - Why it reduces friction Viggy (and suppliers) can quickly assess market relevance before committing to auth. It also makes listings shareable (email intros, trade shows, referrals), which is critical for reaching small suppliers who won’t create accounts just to “peek.”  
    - Acceptance criteria: Unauthenticated users can browse listings and open detail pages; attempts to post/respond trigger an auth CTA and do not mutate data.
+
+---
+## Quantitative success metrics (Go/No-Go validation)
+
+### 1.Time thresholds
+- **T_post (Steps 4–8):** Create + submit a demand listing and open its detail page in **≤ 150 seconds**.  
+  - *Target after iteration:* **≤ 120 seconds**
+- **T_eval (Step 9):** Evaluate responses and decide on a match in **≤ 60 seconds**, once responses exist.
+- **T_discover (public-browse improvement):** Landing → viewing a relevant listing detail page in **≤ 20 seconds** (no login).
+
+### 2. Friction severity limits
+- **Severe friction:** **0 allowed** in Steps 4–8 (posting + viewing must never hard-stop).
+- **Moderate friction:** **≤ 3 total** across the full CUJ.
+
+### 3. Context switch maximum
+- **≤ 2 total** (Auth0 redirect counts as 1; everything else should remain in-product).
+
+### 4. Decision-grade response requirement (user viability)
+To count the CUJ as validated for Viggy’s supplier selection workflow:
+- At least **one** supplier response must include:  
+  **price (or quote intent) + qty/capacity + lead time/availability**.  
+If responses lack these fields, the system may be technically functional but **not viable** for real supplier selection.
+
+### 5. Security 
+- **0 unauthorized mutations:** Unauthenticated users must not be able to create/edit listings, post responses, match, or fulfill.
