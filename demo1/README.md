@@ -56,7 +56,7 @@ This README is the high-level manifest for the **Release Demo 1** of the Cultiva
 
 - **`demo1/system-topology.jpg` – System topology diagram**  
   Visual diagram of foundational system boundaries and logical separation between **UI**, **Logic**, and **Data** tiers.  
-  **Link placeholder**: _add link or path here_
+  **Link placeholder**: https://github.com/3milyfz/EMZ/blob/9acdda38d414e74077662b81119aec29d9a87481/demo1/system-topology.jpg
 
 - **`demo1/proof-of-concept.md` – Proof of Concept summary**  
   ~500-word technical summary defining the PoC scope for the primary interaction, what “working” means, and any known technical constraints or accepted limitations.  
