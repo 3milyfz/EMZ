@@ -38,17 +38,17 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
 
 | Step # | Action (what the user does) | Context Switches | Time (seconds) | Friction Severity | Evidence |
 |---:|---|---|---:|---|---|
-| 1 | Land on product, click Get started / Log in | Auth redirect (external) | 10s | Moderate | Home screenshot |
-| 2 | Complete authentication | External auth flow | 10s | Moderate | Post-auth screenshot |
-| 3 | First-time: register role (Producer/Buyer) and continue | None | 30s | Moderate | Register screenshot |
-| 4 | Navigate to Listings and click “New Listing” | None | 3s | None/Great | Listings screenshot |
-| 5 | Create **Demand** listing for specialty ingredient (e.g., “Yuzu juice (Canada)” / “Aji amarillo peppers”) | Mental context: units, spec, frequency, quality requirements | 1-2min | Moderate | New Listing form screenshot |
-| 6 | Add constraints in description: quality baseline, required consistency, approximate run cadence, target price band (if applicable) | None | 15s | Great | Filled form screenshot |
-| 7 | Submit listing | None | 3s | Great | Submission success/error screenshot |
-| 8 | Verify listing appears and open listing detail | None | 3s | Great | Listing in list + detail screenshot |
-| 9 | Review supplier responses: compare **capacity/reliability signals** + price + lead time | Mental context shift: procurement evaluation | 30s | Moderate  | Responses section screenshot |
-| 10 | Match one supplier response (chosen supplier) | None | 3s | None | Matched state screenshot |
-| 11 | Mark as fulfilled once a supplier is selected for next run | None | 3s | None | Fulfilled state screenshot |
+| 1 | Land on product, click Get started / Log in | Auth redirect (external) | 10s | Moderate | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 2 | Complete authentication | External auth flow | 10s | Moderate | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 3 | First-time: register role (Producer/Buyer) and continue | None | 30s | Moderate | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4)|
+| 4 | Navigate to Listings and click “New Listing” | None | 3s | None/Great |[baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 5 | Create **Demand** listing for specialty ingredient (e.g., “Yuzu juice (Canada)” / “Aji amarillo peppers”) | Mental context: units, spec, frequency, quality requirements | 1-2min | Moderate | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 6 | Add constraints in description: quality baseline, required consistency, approximate run cadence, target price band (if applicable) | None | 15s | Great | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 7 | Submit listing | None | 3s | Great | [baseline CUJ Part 1](assets/base-line_CUJ_Part1.mp4) |
+| 8 | Verify listing appears and open listing detail | None | 3s | Great | [baseline CUJ Part 2](assets/base-line_CUJ_Part2.mp4) |
+| 9 | Review supplier responses: compare **capacity/reliability signals** + price + lead time | Mental context shift: procurement evaluation | 30s | Moderate  | [baseline CUJ Part 2](assets/base-line_CUJ_Part2.mp4) |
+| 10 | Match one supplier response (chosen supplier) | None | 3s | None | [baseline CUJ Part 2](assets/base-line_CUJ_Part2.mp4) |
+| 11 | Mark as fulfilled once a supplier is selected for next run | None | 3s | None | [baseline CUJ Part 2](assets/base-line_CUJ_Part2.mp4) |
 
 ---
 
