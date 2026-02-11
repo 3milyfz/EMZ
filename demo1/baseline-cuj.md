@@ -32,6 +32,7 @@ This baseline CUJ audits the end-to-end loop for **specialty ingredient sourcing
 Demand listing (Viggy) → Supplier response (farmer/producer) → Match → Fulfill.
 Out of scope: payments, contracts, delivery scheduling automation, long-term forecasting, and multi-order procurement workflows.
 
+---
 
 ## Journey Audit (baseline)
 
@@ -49,5 +50,28 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
 | 10 | Match one supplier response (chosen supplier) | None | 3s | None | Matched state screenshot |
 | 11 | Mark as fulfilled once a supplier is selected for next run | None | 3s | None | Fulfilled state screenshot |
 
+---
+
+## Highlights & Lowlights (friction synthesis)
+
+### None / Great
+| Area | Why it’s good | Keep / extend |
+|---|---|---|
+| Clear gating logic (Home → Register → Listings) | Prevents “half-authenticated” state confusion; deterministic navigation | Extend access to the listings to the public, only make the creation of listing and response of listing log-in users only |
+| Listing Detail ownership logic | Owners see Edit/Delete; non-owners see Respond | Keep |
+
+### Moderate friction
+| Pain point | Where it shows up | Why it matters | Proposed fix (implementable) |
+|---|---|---|---|
+| Pricing mental model is too rigid for demand listings | New Listing form frames price as required “price per unit (per lb)” even when the buyer is posting a demand | For Viggy, demand posts often start as a *target range* or “contact for quote,” especially for specialty ingredients. A mandatory fixed price can cause hesitation or inaccurate posts, reducing response quality. | Make price optional for demand listings and change copy to “Target price (optional)” or “Target price range (optional)”; support “Request quote” toggle that hides price field but keeps listing valid. |
+| Units are fixed to lb for both price and quantity | New Listing form uses a single implicit unit (lb) for qty and price | Specialty sourcing often uses different units (kg, case, pallet, bottle, L, gal). A fixed unit forces mental conversion and increases posting errors, which hurts supplier trust and makes comparisons unreliable. | Add a unit selector for **quantity** and **price unit** (e.g., lb/kg/case/L/gal). Store as `qtyValue + qtyUnit` and `priceValue + priceUnit`. Display units consistently in listing cards and responses. Default to lb for speed but allow override. |
 
 
+### Severe friction
+| Pain point | Why it causes real business risk for Viggy | Proposed fix |
+|---|---|---|
+| Missing fields to judge consistency/reliability | Viggy’s #1 criterion is reliability; without capturing lead time, minimum order quantity, capacity, and recurring availability, responses are not decision-grade and increase the risk of missed production runs | Add structured fields to Response: `lead_time_days`, `moq`, `recurring_capacity`, `delivery_window` (and optional `certs/handling_notes`). Render these fields in a side-by-side comparison layout for responses. |
+| No supplier credibility/history view (no historical listings / Completed deals) | Direct sourcing requires trust, but reliability can’t be fully vetted upfront. Without visibility into a supplier’s past activity (completed matches, fulfillment rate, recent listings), Viggy can’t de-risk onboarding and may avoid engaging altogether | Add a supplier profile page linked from responses (e.g., `/users/:id`): show historical listings, deal history (matched/fulfilled count), fulfillment rate, average lead time (if tracked), and optional references. Start with minimal stats (counts + recent activity) to avoid overbuilding. |
+
+
+---
