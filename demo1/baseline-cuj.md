@@ -75,3 +75,27 @@ Out of scope: payments, contracts, delivery scheduling automation, long-term for
 
 
 ---
+## Product recommendations (next iteration)
+
+1) **Decision-grade reliability fields in responses (fix Severe friction: user viability for Viggy)**  
+   - Change: Extend Response with structured fields: `lead_time_days`, `moq`, `recurring_capacity`, `delivery_window`. Display these in a **side-by-side response comparison** layout.  
+   - Why it reduces friction Reliability is Viggy’s #1 criterion; without these, matching is not decision-grade and risks production disruption.  
+   - Acceptance criteria: A buyer can evaluate at least one response without off-platform follow-up because it includes the minimum reliability information.
+2) **Supplier credibility/profile view (fix Severe friction: trust + de-risk onboarding)**  
+   - Change: Add a lightweight supplier profile page linked from responses (e.g., `/users/:id`) showing: recent listings, **deal history (matched/fulfilled count)**, fulfillment rate, and (if tracked) average lead time.  
+   - Why it reduces friction: Direct sourcing requires trust, but reliability is validated over time. Without history, buyers hesitate to onboard new suppliers.  
+   - Acceptance criteria: From any response, the buyer can view supplier history in ≤2 clicks and use it to inform matching decisions.
+
+3) **Unit selection for quantity + price (reduce conversion errors + improve comparability)**  
+   - Change: Add unit selectors for **quantity unit** and **price unit** (e.g., `lb`, `kg`, `case`, `L`, `gal`). Persist as structured fields: `qtyValue + qtyUnit`, `priceValue + priceUnit`. Render units consistently on listing cards, detail pages, and responses.  
+   - Why it reduces friction Specialty ingredients are commonly negotiated in multiple units; a fixed unit forces mental conversion and increases posting mistakes, undermining trust and making responses hard to compare.  
+   - Acceptance criteria: Users can create listings and responses using non-lb units; all views display the chosen units consistently.
+4) **Flexible demand pricing (fix rigid pricing mental model in Steps 5–6)**  
+   - Change: For *demand* listings, make price optional and update label to **“Target price (optional)”** or **“Target price range (optional)”**. Add a **“Request quote”** toggle that hides the price input but keeps submission valid.  
+   - Why it reduces friction Specialty sourcing often begins with a target band or quote request. Forcing a fixed “price per lb” increases hesitation and leads to inaccurate posts, which reduces supplier response quality.  
+   - Acceptance criteria: A demand listing can be created with (a) no price, (b) a single target price, or (c) a price range; suppliers still understand the intent.
+  
+5) **Public browsing, gated actions (improve supplier acquisition)**  
+   - Change: Make `/listings` and `/listings/:id` publicly viewable (no login required). Require authentication only for **Create Listing**, **Respond**, **Match/Fulfill**, and **Edit/Delete**.  
+   - Why it reduces friction Viggy (and suppliers) can quickly assess market relevance before committing to auth. It also makes listings shareable (email intros, trade shows, referrals), which is critical for reaching small suppliers who won’t create accounts just to “peek.”  
+   - Acceptance criteria: Unauthenticated users can browse listings and open detail pages; attempts to post/respond trigger an auth CTA and do not mutate data.
