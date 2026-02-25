@@ -36,9 +36,9 @@ Facebook Marketplace requires manual entry for item type/title/description, lead
 A run is successful when:
 1) Restaurant can post demand (bounty) with clear fields.
 2) Farmer can post supply quickly (photo→draft) OR find a bounty.
-3) Farmer can initiate inquiry (thread opens on “Interested”).
-4) Chat supports quick clarification and decisions (copilot assists but user approves).
-5) Workflow reaches a committed outcome (offer/accept in future, at minimum a clear matched status for demo).
+3) Farmer can submit an offer (structured commitment) to a bounty.
+4) Submitting an offer creates a chat thread; both sides can coordinate inside the product (copilot assists but user approves).
+5) Restaurant can review responses/offers and open chat via a message icon; workflow reaches a committed outcome (at minimum matched status for demo).
 6) Users can review what happened (thread history; order/history over time).
 
 ---
@@ -78,35 +78,38 @@ A run is successful when:
 
 ---
 
-### Phase 3 — Interest → Coordination (Chat-first)
-**Step 3.1 Farmer becomes interested in bounty**
-- Farmer clicks “Interested” on bounty to start coordination.
+### Phase 3 — Commitment first (Offer submission)
+**Step 3.1 Farmer views a bounty**
+- Farmer opens bounty details and decides whether they can fulfill.
 
-**Step 3.2 Inquiry thread opens**
-- Thread is tied to bounty; all details stay in-product.
+**Step 3.2 Farmer submits a structured offer**
+- Offer fields: qty (partial allowed), price, timing, logistics notes.
 
-**Step 3.3 Copilot assists communication (HITL)**
+**Step 3.3 Fit score shown (future/full)**
+- Fit Tier + “why” explanation supports feasibility checks and comparability (deferred if needed).
+
+---
+
+### Phase 4 — Coordination after commitment (Chat created on offer)
+**Step 4.1 Offer submission creates a chat thread**
+- A thread is created and tied to the offer/bounty context.
+
+**Step 4.2 Restaurant reviews responses and opens chat via message icon**
+- Each response/offer has a **message icon**; clicking it opens the thread.
+
+**Step 4.3 Copilot assists communication (HITL)**
 - Autocomplete/draft suggested replies; user approves/edits.
 
 ---
 
-### Phase 4 — Commitment & matching (structured transaction)
-**Step 4.1 Convert inquiry to structured offer**
-- Offer fields: qty (partial allowed), price, timing, logistics.
+### Phase 5 — Matching and completion
+**Step 5.1 Restaurant accepts offer(s)**
+- Updates filled vs remaining; supports multi-farm fill (future/full).
 
-**Step 4.2 Fit score shown**
-- Fit Tier + “why” explanation supports feasibility checks and comparability.
-
-**Step 4.3 Restaurant accepts offer(s)**
-- Updates filled vs remaining; supports multi-farm fill.
-
----
-
-### Phase 5 — Completion
-**Step 5.1 Payment**
+**Step 5.2 Payment**
 - Future: escrow.
 
-**Step 5.2 Status + history**
+**Step 5.3 Status + history**
 - Matched/fulfilled/expired states; order history for repeat workflow.
 
 ---
@@ -126,22 +129,28 @@ A run is successful when:
 ### Map discovery
 - Value: reduces search friction and supports local matching.
 
+### Offer submission (structured commitment)
+- Value: converts interest into a concrete response; reduces ambiguity and enables later comparability.
+
+### Chat created on offer + message icon on responses
+- Value: ensures coordination happens only when a transaction is plausible; reduces spam/low-signal chats and keeps context anchored to an offer.
+
 ### Chat + Copilot autocomplete (HITL)
 - Value: reduces “professional writing” friction; speeds confirmations/substitutions.
 
-### Fit score + explanation
+### Fit score + explanation (future/full)
 - Value: reduces over-commitment and improves restaurant decision speed.
 
-### Filled vs remaining tracking
+### Filled vs remaining tracking (future/full)
 - Value: makes partial fulfillment manageable; reduces admin burden.
 
 ### Ag Guide (tiered guidance; future agent)
 - Value: reduces “how do I meet spec?” friction; grows supply depth over time.
 
-### ESG validation at registration
+### ESG validation at registration (future)
 - Value: reduces greenwashing risk and increases credibility.
 
-### Escrow
+### Escrow (future)
 - Value: reduces payment dispute/non-payment risk.
 
 ---
@@ -149,5 +158,5 @@ A run is successful when:
 ## 7 This sprint focus (what we validated)
 This sprint prioritizes validating proof-of-value around:
 - **Creation friction reduction** (Auto-Lister + Price hints)
-- **Coordination friction reduction** (Chat thread + Copilot autocomplete)
+- **Coordination friction reduction** (Chat thread created on offer + Copilot autocomplete)
 while keeping other CUJ steps minimally scaffolded to support end-to-end demonstration.
