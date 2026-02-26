@@ -12,13 +12,13 @@ All release deliverables for Demo 2 are under **`demo2/`**:
 
 | Artifact | Description |
 |----------|-------------|
-| [demo2/product-definition-cuj.md](./demo2/product-definition-cuj.md) | End-to-end Product Definition CUJ: persona, journey steps, feature–value mapping. |
-| [demo2/feature-prioritization.md](./demo2/feature-prioritization.md) | Strategic prioritization, implementation timeline (this sprint vs deferred). |
-| [demo2/evolved-topology.png](./demo2/evolved-topology.png) | Evolved system topology diagram (industry-standard layered view). |
-| [demo2/architectural-rationale.md](./demo2/architectural-rationale.md) | Design decisions: what changed, why, alternatives, technical debt, limitations. |
-| [demo2/pivot-contract.md](./demo2/pivot-contract.md) | Pre-sprint pivot contract (hypothesis, kill metric, trigger date, fallbacks). |
-| [demo2/build-trap-postmortem.md](./demo2/build-trap-postmortem.md) | Post-sprint retrospective and validation. |
-| [demo2/README.md](./demo2/README.md) | Demo 2 release index and checklist. |
+| [demo2/product-definition-cuj.md](https://github.com/3milyfz/EMZ/blob/42c25ac289903b76a7c6585473ddc280d47451b3/demo2/product-definition-cuj.md) | End-to-end Product Definition CUJ: persona, journey steps, feature–value mapping. |
+| [demo2/feature-prioritization.md](https://github.com/3milyfz/EMZ/blob/42c25ac289903b76a7c6585473ddc280d47451b3/demo2/feature-prioritization.md) | Strategic prioritization, implementation timeline (this sprint vs deferred). |
+| [demo2/evolved-topology.png](https://github.com/3milyfz/EMZ/blob/4dfd7521e7eb8025c4dc9741325d64f81585f1f2/demo2/evolved-topology.png) | Evolved system topology diagram (industry-standard layered view). |
+| [demo2/architectural-rationale.md](https://github.com/3milyfz/EMZ/blob/42c25ac289903b76a7c6585473ddc280d47451b3/demo2/architectural-rationale.md) | Design decisions: what changed, why, alternatives, technical debt, limitations. |
+| [demo2/pivot-contract.md](https://github.com/3milyfz/EMZ/blob/42c25ac289903b76a7c6585473ddc280d47451b3/demo2/pivot-contract.md) | Pre-sprint pivot contract (hypothesis, kill metric, trigger date, fallbacks). |
+| [demo2/build-trap-postmortem.md](https://github.com/3milyfz/EMZ/blob/42c25ac289903b76a7c6585473ddc280d47451b3/demo2/build-trap-postmortem.md) | Post-sprint retrospective and validation. |
+| [demo2/README.md](https://github.com/3milyfz/EMZ/blob/4dfd7521e7eb8025c4dc9741325d64f81585f1f2/demo2/README.md) | Demo 2 release index and checklist. |
 
 ---
 
