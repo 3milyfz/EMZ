@@ -12,13 +12,13 @@ All release deliverables for Demo 3 are under **`demo3/`**:
 
 | Artifact | Description |
 |----------|-------------|
-| [demo3/feature-prioritization.md](https://github.com/3milyfz/EMZ/blob/main/demo3/feature-prioritization.md) | Gap analysis with quantified performance ratios, feature parity assessment, critical vs acceptable gaps, and strategic feature decisions with justification. |
-| [demo3/evolved-topology.jpg](https://github.com/3milyfz/EMZ/blob/main/demo3/evolved-topology.jpg) | Updated system topology diagram showing the major architectural evolution for the chat-first farm agent experience. |
-| [demo3/architectural-rationale.md](https://github.com/3milyfz/EMZ/blob/main/demo3/architectural-rationale.md) | Design decision log covering what changed, why it was necessary, alternatives considered, technical debt introduced or resolved, and remaining limitations. |
-| [demo3/pivot-contract.md](https://github.com/3milyfz/EMZ/blob/main/demo3/pivot-contract.md) | Pre-sprint pivot contract defining the competitive hypothesis, kill metric, trigger date, and fallback options. |
-| [demo3/build-trap-postmortem.md](https://github.com/3milyfz/EMZ/blob/main/demo3/build-trap-postmortem.md) | Post-sprint retrospective evaluating whether the implemented features delivered the hypothesized value and whether building them was necessary to test the pivot. |
-| [demo3/README.md](https://github.com/3milyfz/EMZ/blob/main/demo3/README.md) | Demo 3 release index and manifest. |
-
+| [demo3/competitive-review-cuj.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/competitive-review-cuj.md) | Competitive Review CUJ across Cultivate and market alternatives, including workflow comparison, friction analysis, gap quantification, and benchmarking conclusions. |
+| [demo3/feature-prioritization.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/feature-prioritization.md) | Gap analysis with quantified performance ratios, feature parity assessment, critical vs acceptable gaps, and strategic feature decisions with justification. |
+| [demo3/evolved-topology.jpg](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/evolved-topology.jpg) | Updated system topology diagram showing the major architectural evolution for the chat-first farm agent experience. |
+| [demo3/architectural-rationale.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/architectural-rationale.md) | Design decision log covering what changed, why it was necessary, alternatives considered, technical debt introduced or resolved, and remaining limitations. |
+| [demo3/pivot-contract.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/pivot-contract.md) | Pre-sprint pivot contract defining the competitive hypothesis, kill metric, trigger date, and fallback options. |
+| [demo3/build-trap-postmortem.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/build-trap-postmortem.md) | Post-sprint retrospective evaluating whether the implemented features delivered the hypothesized value and whether building them was necessary to test the pivot. |
+| [demo3/README.md](https://github.com/3milyfz/EMZ/blob/v1.0.5/demo3/README.md) | Demo 3 release index and manifest. |
 ---
 
 ## Release focus
