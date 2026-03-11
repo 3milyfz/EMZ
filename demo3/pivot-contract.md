@@ -2,7 +2,7 @@
 
 ## Pivot Under Test
 We are pivoting from a traditional marketplace web app toward a **chat-first farm agent** experience.  
-Instead of asking users to browse, filter, and manually fill out marketplace forms, we are testing whether buyers and sellers will prefer to complete key workflows through a conversational interface.
+Instead of asking users to browse, filter, and manually fill out marketplace forms, we are testing whether buyers and sellers can complete key workflows through a conversational interface.
 
 This sprint does **not** test “adding one more feature” to the existing marketplace. It tests a different product interaction model and a different competitive position.
 
@@ -11,7 +11,7 @@ This sprint does **not** test “adding one more feature” to the existing mark
 ## Hypothesis
 
 ### Competitive Positioning Hypothesis
-If we reposition our product as a **farm commerce agent** rather than a standard produce marketplace, then users will find it more efficient, intuitive, and differentiated because the agent can unify multiple high-friction workflows into one interface:
+If we reposition our product as a **farm commerce agent** rather than a standard produce marketplace, then the product will be more efficient, intuitive, and differentiated because the agent can unify multiple high-friction workflows into one interface:
 
 - produce discovery through chat
 - listing creation through chat
@@ -25,7 +25,7 @@ Our belief is that this creates a stronger competitive position than a conventio
    Users do not need to navigate multiple pages, forms, and filters.
 
 2. **Better fit for fragmented, low-digital-maturity users**  
-   Small farmers and buyers may be more willing to “describe what they need” than learn a marketplace UI.
+   Small farmers and buyers may be more willing to describe what they need than learn a marketplace UI.
 
 3. **Higher perceived product intelligence**  
    The system does more than match listings; it helps users decide, structure, price, and act.
@@ -34,14 +34,14 @@ Our belief is that this creates a stronger competitive position than a conventio
    Many marketplaces look interchangeable; a farm-specific agent that integrates sourcing, listing, and checkout is a more differentiated wedge.
 
 ### Specific Sprint Hypothesis
-Users will successfully complete at least one of the following core jobs through the chat interface without needing the old marketplace UI:
+The chat-first product will successfully support the core commerce jobs below without requiring users to fall back to the old marketplace UI:
 
 - shop for produce
-- create a listing
+- create a listing from a produce image
 - use voice-to-text to submit intent
 - move toward checkout
 
-If users can do this with acceptable clarity and speed, then the agent-first direction is promising enough to continue.
+If the product can support these workflows in a credible end-to-end demo, then the agent-first direction is promising enough to continue.
 
 ---
 
@@ -63,7 +63,7 @@ The farm agent should support:
    Users can speak instead of typing.
 
 4. **Listing creation through chat**  
-   Users can create supply listings conversationally, with support from computer vision and dynamic pricing features.
+   Sellers upload an image of the produce in the chat interface. The system uses computer vision and dynamic pricing support to auto-fill the product description and listing details, then asks the seller to confirm or edit the quantity and price before publishing.
 
 5. **Quick checkout flow**  
    Users can move from intent to purchase with minimal steps.
@@ -77,8 +77,8 @@ We are testing whether it shows enough evidence to justify continuing the pivot.
 
 Evidence we want to see:
 
-- users understand what the agent can do
-- users can complete meaningful tasks with limited confusion
+- the product clearly supports multiple commerce actions through one interface
+- core workflows can be completed with limited friction
 - the chat UX feels simpler, not more complicated, than the marketplace flow
 - the agent experience feels meaningfully different from a generic chatbot wrapper
 
@@ -129,7 +129,7 @@ This is a firm decision point because continuing the pivot affects future UI, en
 
 ### Continue the Pivot if:
 - the kill metric is met or exceeded
-- users can complete core workflows through chat with manageable friction
+- the product can complete core workflows through chat with manageable friction
 - the experience feels more natural than the existing marketplace flow
 - the team sees a credible path to improving reliability next sprint
 
@@ -144,8 +144,8 @@ In that case, we keep the working wedge and stop forcing a full agent-first expe
 
 ### Kill the Pivot if:
 - the threshold is missed
-- users do not trust or understand the chat flow
-- the agent creates more UX friction than it removes
+- the chat flow creates more UX friction than it removes
+- the agent behaves like a demo wrapper rather than a real product surface
 - the product loses clarity compared with the original marketplace
 
 ---
@@ -168,18 +168,19 @@ This keeps the lowest-risk product structure while preserving AI value.
 ### Fallback Option 2: Agent Only for Listing Creation
 Use chat as a specialized workflow for supply-side listing creation only.
 
-Rationale:
+Rationale:  
 Listing creation is form-heavy and may benefit most from:
-- voice input
+- image upload
 - CV-based produce recognition
 - dynamic pricing support
+- quick confirmation of quantity and price
 
 This gives the agent a focused and defensible use case.
 
 ### Fallback Option 3: Agent Only for Produce Sourcing / Concierge Search
 Position the agent as a sourcing assistant for buyers rather than a full commerce surface.
 
-Rationale:
+Rationale:  
 “Help me find local basil for next week” is a natural conversational task and may be easier than supporting full transactional flows.
 
 ### Fallback Option 4: Voice Layer on Existing Product
@@ -203,4 +204,4 @@ If the evidence is strong, we should commit and build depth around the agent exp
 ---
 
 ## One-Sentence Commitment
-We will continue the farm-agent pivot only if users demonstrate that chat is a clearer and more effective interface for farm commerce than our current marketplace flow; otherwise, we will narrow the agent to a focused assistive role or return to a marketplace-first product.
+We will continue the farm-agent pivot only if the chat-first product proves it can support farm commerce workflows more credibly and effectively than our current marketplace flow; otherwise, we will narrow the agent to a focused assistive role or return to a marketplace-first product.
